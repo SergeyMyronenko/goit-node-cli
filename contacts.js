@@ -10,8 +10,6 @@ async function listContacts() {
   return JSON.parse(data);
 }
 
-listContacts().catch((error) => console.error(error));
-
 async function getContactById(contactId) {
   const contactsList = await listContacts();
   const contactWtihId = contactsList.find(
